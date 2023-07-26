@@ -1,0 +1,144 @@
+// Mobile menu
+.mobile-menu {
+  position: absolute;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  padding-left: 40px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: var(--second-accent-color);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+
+ 
+
+  &__open-button {
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__icon-menu {
+    fill: #000000;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__icon-close {
+    fill: var(--header-color);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link {
+    @extend %decoration;
+
+    &--current-page {
+      color: var(--accent-color);
+    }
+
+    color: var(--header-color);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+  }
+
+  &__navigation--bottom {
+    margin-bottom: 302px;
+  }
+
+  &__contacts--bottom {
+    margin-bottom: 64px;
+  }
+
+  &__telefon {
+    @extend %decoration;
+
+    color: var(--accent-color);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.68px;
+  }
+
+  &__email {
+    @extend %decoration;
+
+    color: var(--paragraph-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+
+  &__social-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__social-link {
+    display: flex;
+    @extend %decoration;
+
+    color: var(--accent-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.36px;
+
+    &--after::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 22px;
+      background-color: rgba(33, 33, 33, 0.2);
+
+      margin-left: 10px;
+    }
+  }
+}
+
+
+.mobile-menu__container{
+  display: flex;
+  flex-direction: column;
+
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+
+    &__open-button {
+      display: none;
+    }
+  }
+}
