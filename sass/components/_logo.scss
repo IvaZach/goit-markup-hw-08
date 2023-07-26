@@ -1,0 +1,30 @@
+/*Logo*/
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__link {
+  color: var(--accent-color);
+  @extend %decoration;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  display: inline-block;
+
+  &--right {
+    margin-right: 93px;
+  }
+  &--bottom {
+    margin-bottom: 20px;
+  }
+}
+.logo__part {
+  &--black {
+    color: #000000;
+  }
+  &--white {
+    color: var(--second-accent-color);
+  }
+}
