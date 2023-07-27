@@ -44,7 +44,12 @@
               </li>
             </ul>
           </nav>
-          <button type="button" class="mobile-menu__open-button">
+          <button
+            type="button"
+            class="mobile-menu__open-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="mobile-menu__icon-menu" width="40" height="40">
               <use href="./images/icons.svg#icon-menu_40px"></use>
             </svg>
@@ -79,16 +84,20 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu">
-        <div class="mobile-menu__container">
-        <button type="button" class="mobile-menu__close-button">
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="mobile-menu__container container">
+        <button type="button" class="mobile-menu__close-button js-close-menu">
           <svg class="mobile-menu__icon-close" width="40" height="40">
             <use href="./images/icons.svg#icon-close_40px"></use>
           </svg>
         </button>
         <ul class="mobile-menu__navigation--bottom link">
           <li class="mobile-menu__item">
-            <a href="./index.html" class="mobile-menu__link mobile-menu__link--current-page">Студія</a>
+            <a
+              href="./index.html"
+              class="mobile-menu__link mobile-menu__link--current-page"
+              >Студія</a
+            >
           </li>
           <li class="mobile-menu__item">
             <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
@@ -111,18 +120,31 @@
         </ul>
         <ul class="mobile-menu__social-container link">
           <li class="mobile-menu__social-item">
-            <a href="" class="mobile-menu__social-link mobile-menu__social-link--after">Instagram</a>
+            <a
+              href=""
+              class="mobile-menu__social-link mobile-menu__social-link--after"
+              >Instagram</a
+            >
           </li>
           <li class="mobile-menu__social-item">
-            <a href="" class="mobile-menu__social-link mobile-menu__social-link--after">Twitter</a>
+            <a
+              href=""
+              class="mobile-menu__social-link mobile-menu__social-link--after"
+              >Twitter</a
+            >
           </li>
           <li class="mobile-menu__social-item">
-            <a href="" class="mobile-menu__social-link mobile-menu__social-link--after">Facebook</a>
+            <a
+              href=""
+              class="mobile-menu__social-link mobile-menu__social-link--after"
+              >Facebook</a
+            >
           </li>
           <li class="mobile-menu__social-item">
             <a href="" class="mobile-menu__social-link">LinkedIn</a>
           </li>
-        </ul> </div>
+        </ul>
+      </div>
       </div>
     </header>
     <!-- <main> -->
@@ -768,6 +790,13 @@
         </form>
       </div>
     </div> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
