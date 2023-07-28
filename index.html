@@ -160,7 +160,7 @@
       </section>
 
       <!--Benefits-->
-     <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Specific company</h2>
           <ul class="benefits link">
@@ -224,34 +224,92 @@
       </section>
 
       <!--Services-->
-      <!-- <section class="section services">
+      <section class="section services">
         <div class="container">
           <h2 class="section__header section__header--bottom">
             Чим ми займаємося
           </h2>
           <ul class="link services__flex">
             <li class="services__list">
-              <img
-                src="./images/box1.jpg"
-                alt="Екран і руки на клавіатурі"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/desktop/service1/desktop-img-service1.webp    1x,
+                    ./images/services/desktop/service1/desktop-img-service1@2x.webp 2x,
+                    ./images/services/desktop/service1/desktop-img-service1@3x.webp 3x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/services/desktop/service1/desktop-img-service1.jpg    1x,
+                    ./images/services/desktop/service1/desktop-img-service1@2x.jpg 2x,
+                    ./images/services/desktop/service1/desktop-img-service1@3x.jpg 3x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="services__image"
+                  src="./images/services/desktop/service1/desktop-img-service1.jpg "
+                  alt="Екран і руки на клавіатурі"
+                />
+              </picture>
               <div class="services__item">
                 <h3>Десктопні додатки</h3>
               </div>
             </li>
             <li class="services__list">
-              <img
-                src="./images/box2.jpg"
-                alt="Екран і телефон в руці"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/desktop/service2/desktop-img-service2.webp    1x,
+                    ./images/services/desktop/service2/desktop-img-service2@2x.webp 2x,
+                    ./images/services/desktop/service2/desktop-img-service2@3x.webp 3x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/services/desktop/service2/desktop-img-service2.jpg    1x,
+                    ./images/services/desktop/service2/desktop-img-service2@2x.jpg 2x,
+                    ./images/services/desktop/service2/desktop-img-service2@3x.jpg 3x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="services__image"
+                  src="./images/services/desktop/service2/desktop-img-service2.jpg"
+                  alt="Екран і телефон в руці"
+                />
+              </picture>
               <div class="services__item">
                 <h3>Мобільні додатки</h3>
               </div>
             </li>
             <li class="services__list">
-              <img src="./images/box3.jpg" alt="Планшет в руці" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/desktop/service3/desktop-img-service3.webp    1x,
+                    ./images/services/desktop/service3/desktop-img-service3@2x.webp 2x,
+                    ./images/services/desktop/service3/desktop-img-service3@3x.webp 3x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/services/desktop/service3/desktop-img-service3.jpg    1x,
+                    ./images/services/desktop/service3/desktop-img-service3@2x.jpg 2x,
+                    ./images/services/desktop/service3/desktop-img-service3@3x.jpg 3x
+                  "
+                  media="(min-width:1200px)" />
+                <img
+                  class="services__image"
+                  src="./images/services/desktop/service3/desktop-img-service3.jpg"
+                  alt="Планшет в руці"
+              /></picture>
               <div class="services__item">
                 <h3>Дизайнерські рішення</h3>
               </div>
@@ -261,17 +319,62 @@
       </section>
 
       <!-- Our team -->
-
-      <!-- <section class="section our-team">
+      <section class="section our-team">
         <div class="container">
           <h2 class="section__header section__header--bottom">Наша команда</h2>
           <ul class="link our-team__flex">
-            <li class="our-team__list">
-              <img
-                src="./images/imgpd1.jpg"
-                alt="Фотографія продакт дизайнера"
-                width="270"
-              />
+            <li class="our-team__list our-team__list--bottom">
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop/pd/desktop-img-pd.webp    1x,
+                    ./images/our-team/desktop/pd/desktop-img-pd@2x.webp 2x,
+                    ./images/our-team/desktop/pd/desktop-img-pd@3x.webp 3x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/our-team/desktop/pd/desktop-img-pd.jpg    1x,
+                    ./images/our-team/desktop/pd/desktop-img-pd@2x.jpg 2x,
+                    ./images/our-team/desktop/pd/desktop-img-pd@3x.jpg 3x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/our-team/tablet/pd/tablet-img-pd.webp    1x,
+                    ./images/our-team/tablet/pd/tablet-img-pd@2x.webp 2x,
+                    ./images/our-team/tablet/pd/tablet-img-pd@3x.webp 3x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/our-team/tablet/pd/tablet-img-pd.jpg    1x,
+                    ./images/our-team/tablet/pd/tablet-img-pd@2x.jpg 2x,
+                    ./images/our-team/tablet/pd/tablet-img-pd@3x.jpg 3x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/pd/mobile-img-pd.webp    1x,
+                    ./images/our-team/mobile/pd/mobile-img-pd@2x.webp 2x,
+                    ./images/our-team/mobile/pd/mobile-img-pd@3x.webp 3x
+                  "
+                  media="(max-width:767px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/pd/mobile-img-pd.jpg    1x,
+                    ./images/our-team/mobile/pd/mobile-img-pd@2x.jpg 2x,
+                    ./images/our-team/mobile/pd/mobile-img-pd@3x.jpg 3x
+                  "
+                  media="(max-width:767px)" />
+                <img
+                  class="our-team__image"
+                  src="./images/our-team/mobile/pd/mobile-img-pd.jpg"
+                  alt="Фотографія продакт дизайнера"
+              /></picture>
               <div class="our-team__item">
                 <h3 class="our-team__name our-team__name--bottom">
                   Ігор Дем'яненко
@@ -331,12 +434,65 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team__list">
-              <img
-                src="./images/imgfd1.jpg"
-                alt="Фотографія фронтенд розробника"
-                width="270"
-              />
+            <li class="our-team__list our-team__list--bottom">
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop/fd/desktop-img-fd.webp    1x,
+                    ./images/our-team/desktop/fd/desktop-img-fd@2x.webp 2x,
+                    ./images/our-team/desktop/fd/desktop-img-fd@3x.webp 3x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/desktop/fd/desktop-img-fd.jpg    1x,
+                    ./images/our-team/desktop/fd/desktop-img-fd@2x.jpg 2x,
+                    ./images/our-team/desktop/fd/desktop-img-fd@3x.jpg 3x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet/fd/tablet-img-fd.webp    1x,
+                    ./images/our-team/tablet/fd/tablet-img-fd@2x.webp 2x,
+                    ./images/our-team/tablet/fd/tablet-img-fd@3x.webp 3x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet/fd/tablet-img-fd.jpg    1x,
+                    ./images/our-team/tablet/fd/tablet-img-fd@2x.jpg 2x,
+                    ./images/our-team/tablet/fd/tablet-img-fd@3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/fd/mobile-img-fd.webp    1x,
+                    ./images/our-team/mobile/fd/mobile-img-fd@2x.webp 2x,
+                    ./images/our-team/mobile/fd/mobile-img-fd@3x.webp 3x
+                  "
+                  media="(max-width:767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/fd/mobile-img-fd.jpg    1x,
+                    ./images/our-team/mobile/fd/mobile-img-fd@2x.jpg 2x,
+                    ./images/our-team/mobile/fd/mobile-img-fd@3x.jpg 3x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/our-team/mobile/fd/mobile-img-fd.jpg"
+                  alt="Фотографія фронтенд розробника"
+                />
+              </picture>
               <div class="our-team__item">
                 <h3 class="our-team__name our-team__name--bottom">
                   Ольга Рєпіна
@@ -396,12 +552,65 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team__list">
-              <img
-                src="./images/imgm1.jpg"
-                alt="Фотографія маркетолога"
-                width="270"
-              />
+            <li class="our-team__list our-team__list--bottom">
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop/marketing/desktop-img-m.webp    1x,
+                    ./images/our-team/desktop/marketing/desktop-img-m@2x.webp 2x,
+                    ./images/our-team/desktop/marketing/desktop-img-m@3x.webp 3x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/desktop/marketing/desktop-img-m.jpg    1x,
+                    ./images/our-team/desktop/marketing/desktop-img-m@2x.jpg 2x,
+                    ./images/our-team/desktop/marketing/desktop-img-m@3x.jpg 3x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet/marketing/tablet-img-m.webp    1x,
+                    ./images/our-team/tablet/marketing/tablet-img-m@2x.webp 2x,
+                    ./images/our-team/tablet/marketing/tablet-img-m@3x.webp 3x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet/marketing/tablet-img-m.jpg    1x,
+                    ./images/our-team/tablet/marketing/tablet-img-m@2x.jpg 2x,
+                    ./images/our-team/tablet/marketing/tablet-img-m@3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/marketing/mobile-img-m.webp    1x,
+                    ./images/our-team/mobile/marketing/mobile-img-m@2x.webp 2x,
+                    ./images/our-team/mobile/marketing/mobile-img-m@3x.webp 3x
+                  "
+                  media="(max-width:767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/marketing/mobile-img-m.jpg    1x,
+                    ./images/our-team/mobile/marketing/mobile-img-m@2x.jpg 2x,
+                    ./images/our-team/mobile/marketing/mobile-img-m@3x.jpg 3x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/our-team/mobile/marketing/mobile-img-m.jpg"
+                  alt="Фотографія маркетолога"
+                />
+              </picture>
               <div class="our-team__item">
                 <h3 class="our-team__name our-team__name--bottom">
                   Микола Тарасов
@@ -461,12 +670,65 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team__list">
-              <img
-                src="./images/imguid1.jpg"
-                alt="Фотографія UI дизайнера"
-                width="270"
-              />
+            <li class="our-team__list our-team__list--bottom">
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop/uid/desktop-img-uid.webp    1x,
+                    ./images/our-team/desktop/uid/desktop-img-uid@2x.webp 2x,
+                    ./images/our-team/desktop/uid/desktop-img-uid@3x.webp 3x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/desktop/uid/desktop-img-uid.jpg    1x,
+                    ./images/our-team/desktop/uid/desktop-img-uid@2x.jpg 2x,
+                    ./images/our-team/desktop/uid/desktop-img-uid@3x.jpg 3x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet/uid/tablet-img-uid.webp    1x,
+                    ./images/our-team/tablet/uid/tablet-img-uid@2x.webp 2x,
+                    ./images/our-team/tablet/uid/tablet-img-uid@3x.webp 3x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet/uid/tablet-img-uid.jpg    1x,
+                    ./images/our-team/tablet/uid/tablet-img-uid@2x.jpg 2x,
+                    ./images/our-team/tablet/uid/tablet-img-uid@3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/uid/mobile-img-uid.webp    1x,
+                    ./images/our-team/mobile/uid/mobile-img-uid@2x.webp 2x,
+                    ./images/our-team/mobile/uid/mobile-img-uid@3x.webp 3x
+                  "
+                  media="(max-width:767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/uid/mobile-img-uid.jpg    1x,
+                    ./images/our-team/mobile/uid/mobile-img-uid@2x.jpg 2x,
+                    ./images/our-team/mobile/uid/mobile-img-uid@3x.jpg 3x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/our-team/mobile/uid/mobile-img-uid.jpg"
+                  alt="Фотографія UI дизайнера"
+                />
+              </picture>
               <div class="our-team__item">
                 <h3 class="our-team__name our-team__name--bottom">
                   Михайло Єрмаков
@@ -528,7 +790,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+      -->
+
       <!-- Our clients -->
       <!-- <section class="section our-clients">
         <div class="container">
