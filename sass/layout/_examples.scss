@@ -69,8 +69,8 @@
   letter-spacing: 0.06em;
 
   &--bottom {
-  margin-bottom: 4px;
-}
+    margin-bottom: 4px;
+  }
 }
 
 .examples__paragraph {
@@ -80,4 +80,11 @@
 
   line-height: 1.875;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .examples__pictures {
+    width: 370px;
+    height: 294px;
+  }
 }

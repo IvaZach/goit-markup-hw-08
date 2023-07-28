@@ -966,11 +966,12 @@ img {
 .our-clients__flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 .our-clients__rectangle {
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 
@@ -996,6 +997,16 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .our-clients__rectangle {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-clients__rectangle {
+    width: 170px;
+  }
+}
 /* FOOTER */
 .footer {
   background-color: var(--bg-color-main);
@@ -1247,4 +1258,11 @@ img {
   font-size: var(--font-size-header);
   line-height: 1.875;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .examples__pictures {
+    width: 370px;
+    height: 294px;
+  }
 }/*# sourceMappingURL=main.css.map */

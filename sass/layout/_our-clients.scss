@@ -3,10 +3,11 @@
 .our-clients__flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .our-clients__rectangle {
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 .our-clients__link {
@@ -32,4 +33,16 @@
 .our-clients__icon {
   display: block;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients__rectangle {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients__rectangle {
+    width: 170px;
+  }
 }
