@@ -1,3 +1,5 @@
+// Profil - exsamples
+
 .examples {
   display: flex;
   flex-wrap: wrap;
@@ -5,7 +7,7 @@
 }
 .examples__list {
   background-color: var(--second-accent-color);
-  width: 370px;
+  width: 100%;
   height: 404px;
 }
 .examples__link {
@@ -59,6 +61,10 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
+  &:first-child {
+    padding-bottom: 56px;
+  }
 }
 .examples__header {
   color: var(--header-color);
@@ -82,9 +88,42 @@
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .examples__list {
+    width: 354px;
+
+    &:nth-child(1) {
+      height: 440px;
+    }
+  }
+  .examples__link {
+    height: 100%;
+  }
+
+  .examples__item--bottom {
+    padding-bottom: 56px;
+  }
+}
 @media screen and (min-width: 1200px) {
+  .examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .examples__list {
+    width: 370px;
+    height: 404px;
+  }
   .examples__pictures {
     width: 370px;
     height: 294px;
+  }
+  .examples__item--bottom {
+    padding-bottom: 20px;
   }
 }

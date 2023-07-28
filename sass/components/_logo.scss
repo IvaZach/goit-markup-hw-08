@@ -1,33 +1,5 @@
-/*Logo*/
-// .logo {
-//   display: flex;
-//   align-items: center;
-// }
-// .logo__link {
-//   color: var(--accent-color);
-//   @extend %decoration;
-//   font-family: "Raleway";
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.192;
-//   letter-spacing: 0.03em;
-//   display: inline-block;
+// Logo
 
-//   &--right {
-//     margin-right: 93px;
-//   }
-//   &--bottom {
-//     margin-bottom: 20px;
-//   }
-// }
-// .logo__part {
-//   &--black {
-//     color: var(--header-color);
-//   }
-//   &--white {
-//     color: var(--second-accent-color);
-//   }
-// }
 .logo {
   display: flex;
   align-items: center;
@@ -45,6 +17,9 @@
   display: inline-block;
 
   @extend %decoration;
+  &--bottom {
+    margin-bottom: 20px;
+  }
 }
 
 .logo__part {
