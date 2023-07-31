@@ -1,12 +1,17 @@
 /* PORTFOLIO PAGE */
 
 .portfolio {
-  width: 340px;
+  
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio {
+    width: 340px;}
 }
 
 .portfolio__menu {

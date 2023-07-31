@@ -2,10 +2,10 @@
 
 .modal {
   position: absolute;
-  top: 30%;
+  top: 3%;
   left: 45%;
-  transform: translate(-45%, -25%) scale(1);
-  width: 90%;
+  transform: translate(-45%, 1%) scale(1);
+  width: 95%;
 
   border-radius: 4px;
   background-color: var(--second-accent-color);
@@ -17,11 +17,6 @@
   padding: 40px;
 }
 
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
 .modal__button {
   &--close {
     position: absolute;
@@ -155,7 +150,6 @@
 .modal__agreement {
   position: relative;
   display: flex;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
 
@@ -184,7 +178,9 @@
 }
 
 .modal__image {
-  display: inline-block;
+  position: absolute;
+  top: 10%;
+  display: block;
   width: 16px;
   height: 15px;
   background-color: var(--second-accent-color);
@@ -200,6 +196,7 @@
     background-size: contain;
     background-origin: border-box;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
   .modal__checkbox:focus + & {
     border-color: var(--accent-color);
@@ -208,6 +205,10 @@
   &--bottom {
     margin-right: 8px;
   }
+}
+
+.modal__paragraph {
+  padding-left: 24px;
 }
 
 .modal__link {
@@ -231,19 +232,27 @@
 }
 
 @media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+
   .modal__button {
     width: 200px;
   }
+
+  .modal__textarea {
+    height: 120px;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: portrait) {
   .modal {
-    top: 45%;
-    left: 45%;
-    transform: translate(-45%, -45%) scale(1);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -45%) scale(1);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (orientation: portrait) {
   .modal {
     width: 528px;
     height: 580px;
@@ -251,7 +260,16 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
+}
 
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+  .modal {
+    width: 528px;
+    height: 580px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -10%) scale(1);
+  }
   .modal__input {
     font-size: 12px;
   }
@@ -267,5 +285,9 @@
   .modal__agreement {
     font-size: var(--font-size-paragraph);
     letter-spacing: 0.42px;
+  }
+
+  .modal__image {
+    top: 20%;
   }
 }

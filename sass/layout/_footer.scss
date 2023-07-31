@@ -110,10 +110,10 @@
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .footer__input {
-    
-    width: 100%;}
+    width: 100%;
+  }
 }
 
 .footer__button {
@@ -153,7 +153,6 @@
 
     &--left-side {
       margin-right: 165px;
-      margin-bottom: 60px;
     }
 
     &--center-side {
@@ -177,6 +176,7 @@
 
     &--left-side {
       margin-right: 70px;
+      margin-bottom: 0;
     }
 
     &--center-side {
@@ -196,6 +196,7 @@
 
     &--bottom {
       margin-right: 12px;
+      margin-bottom: 0;
     }
   }
 }

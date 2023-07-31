@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>WebStudio</title>
     <!-- подключение шрифтов -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
@@ -83,66 +82,67 @@
         </ul>
       </div>
       <div class="mobile-menu js-menu-container" id="mobile-menu">
-        <div class="mobile-menu__container container">
-          <button type="button" class="mobile-menu__close-button js-close-menu">
-            <svg class="mobile-menu__icon-close" width="40" height="40">
-              <use href="./images/icons.svg#icon-close_40px"></use>
-            </svg>
-          </button>
-          <ul class="mobile-menu__navigation--bottom link">
-            <li class="mobile-menu__item">
-              <a
-                href="./index.html"
-                class="mobile-menu__link mobile-menu__link--current-page"
-                >Студія</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#contacts" class="mobile-menu__link">Контакти</a>
-            </li>
-          </ul>
-          <ul class="mobile-menu__contacts--bottom link">
-            <li class="mobile-menu__item">
-              <a href="tel:+380961111111" class="mobile-menu__telefon"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a href="mailto:info@devstudio.com" class="mobile-menu__email"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-menu__social-container link">
-            <li class="mobile-menu__social-item">
-              <a
-                href=""
-                class="mobile-menu__social-link mobile-menu__social-link--after"
-                >Instagram</a
-              >
-            </li>
-            <li class="mobile-menu__social-item">
-              <a
-                href=""
-                class="mobile-menu__social-link mobile-menu__social-link--after"
-                >Twitter</a
-              >
-            </li>
-            <li class="mobile-menu__social-item">
-              <a
-                href=""
-                class="mobile-menu__social-link mobile-menu__social-link--after"
-                >Facebook</a
-              >
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="" class="mobile-menu__social-link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
+        <button type="button" class="mobile-menu__close-button js-close-menu">
+          <svg class="mobile-menu__icon-close" width="40" height="40">
+            <use href="./images/icons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__navigation link">
+          <li class="mobile-menu__item--bottom">
+            <a
+              href="./index.html"
+              class="mobile-menu__link mobile-menu__link--current-page"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-menu__item--bottom">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item--bottom">
+            <a href="#contacts_mobile" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+        <ul
+          class="mobile-menu__contacts mobile-menu__contacts--bottom link"
+          id="contacts_mobile"
+        >
+          <li class="mobile-menu__item--bottom">
+            <a href="tel:+380961111111" class="mobile-menu__telefon"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__item--bottom">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-container link">
+          <li class="mobile-menu__social-item">
+            <a
+              href=""
+              class="mobile-menu__social-link mobile-menu__social-link--after"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href=""
+              class="mobile-menu__social-link mobile-menu__social-link--after"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href=""
+              class="mobile-menu__social-link mobile-menu__social-link--after"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -1031,7 +1031,7 @@
             <textarea
               class="modal__textarea"
               name="comment"
-              rows="5"
+              rows="3"
               placeholder="Введіть текст"
             ></textarea>
           </label>
@@ -1041,14 +1041,14 @@
             <span class="modal__image modal__image--bottom"></span>
             <span class="modal__paragraph"
               >Погоджуюся з розсилкою та приймаю
-            <a class="modal__link" href="">Умови договору</a></span
+              <a class="modal__link" href="">Умови договору</a></span
             >
           </label>
 
           <button class="modal__button" type="submit">Відправити</button>
         </form>
       </div>
-    </div> 
+    </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

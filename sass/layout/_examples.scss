@@ -11,7 +11,8 @@
   
 }
 .examples__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   @extend %decoration;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -57,14 +58,13 @@
 }
 
 .examples__item {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 
-  &:first-child {
-    padding-bottom: 56px;
-  }
+
 }
 .examples__header {
   color: var(--header-color);
